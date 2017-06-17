@@ -11,9 +11,15 @@ class Upload extends Component {
 		};
 
 		return (
-			<div >
-			  <NavBar />
-			  <FileUpload />
+			<div className="container">
+			  <div className="row">
+			  	<NavBar />
+              </div>
+			 
+              <div className="row ">
+              		<FileUpload />
+              </div>
+
 			</div>
 	    );
 	};

@@ -3,14 +3,14 @@ import React, {Component} from 'react';
 class Item extends Component {
 	render(){
 		return (
-		 <div className="row">
+		 <div >
 			  <div className="col-sm-6 col-md-4">
 			    <div className="thumbnail">
-			      <img src="..." alt="..." />
+			      <img src="https://img01.olx.co.ke/images_olxke/1000841586_1_261x203_skyworth-digital-smart-tv-43-inch-brand-new-nairobi-cbd.jpg" alt="mango" />
 			      <div className="caption">
-			        <h3>Thumbnail label</h3>
-			        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-			        <p><a href="#" className="btn btn-primary" role="button">Button</a> <a href="#" className="btn btn-default" role="button">Button</a></p>
+			        <h3>{this.props.name}</h3>
+			        <p>{this.props.description}</p>
+			        <p><a  className="btn btn-primary" role="button">Edit</a> <a  className="btn btn-default" role="button">Delete</a></p>
 			      </div>
 			    </div>
 			  </div>

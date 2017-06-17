@@ -8,7 +8,7 @@ class AlertSuccess extends Component {
 		};
 
 		return (
-		<div className="alert alert-success" role="alert">Well done! You successfully read this important alert message.</div>
+		<div className="alert alert-success" role="alert">{this.props.message}</div>
 	    );
 	};
 }

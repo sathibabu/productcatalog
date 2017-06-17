@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 
-import { Router, Route, Link, IndexRoute, hashHistory, browserHistory } from 'react-router'
+//import { Router, Route, Link, IndexRoute, hashHistory, browserHistory } from 'react-router'
+import { Router,Route,  hashHistory } from 'react-router'
+
 
 
 import Home from './pages/home';

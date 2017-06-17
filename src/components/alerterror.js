@@ -8,7 +8,7 @@ class AlertError extends Component {
 		};
 
 		return (
-		<div className="alert alert-danger" role="alert">Oh snap! Change a few things up and try submitting again.</div>
+		<div className="alert alert-danger" role="alert">{this.props.message}</div>
 	    );
 	};
 }
