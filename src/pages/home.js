@@ -18,11 +18,9 @@ class Home extends Component {
 	}
 
 	componentWillMount(){
-		//console.log(Data)
 		//Make a Rest API
-         
 		Axios.get(Data.products_url).then(response=>{
-			console.log(response.data)
+			//console.log(response.data)
 			this.setState({data:response.data});
 		}).catch(err=>{
 
@@ -33,7 +31,7 @@ class Home extends Component {
 	render(){
 
 		let items = this.state.data.map((item,index)=>{
-  			return	<Item name={item.name} id={item.item_id} price={item.price} description={item.description} url={item.img} key={index}/>          
+  			return	<Item deleteurl={Data.products_dlete_url} name={item.name} id={item.item_id} price={item.price} description={item.description} url={item.img} key={index}/>          
 		});
 
 

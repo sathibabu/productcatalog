@@ -1,7 +1,15 @@
 import React, {Component} from 'react';
-
+import Axios from 'axios'
 class Item extends Component {
+
+	constructor(){
+		super();
+		//this._deleteItem = this._deleteItem.bind(this);
+		this.state= {showitem:true}
+	}
+
 	render(){
+
 		return (
 		 <div >
 			  <div className="col-sm-6 col-md-4">
@@ -10,7 +18,7 @@ class Item extends Component {
 			      <div className="caption">
 			        <h3>{this.props.name}</h3>
 			        <p>{this.props.description}</p>
-			        <p><a  className="btn btn-primary" role="button">Edit</a> <a  className="btn btn-default" role="button">Delete</a></p>
+			        <p><button  className="btn btn-primary" >Edit</button> <button  className="btn btn-default" onClick={this._deleteItem}>Delete</button></p>
 			      </div>
 			    </div>
 			  </div>
